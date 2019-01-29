@@ -1,0 +1,24 @@
+{% load static %}
+<html>
+    <head>
+            <link rel="stylesheet" href="{% static 'css/style.css' %}"?v=1.0>
+    </head>
+    <body>
+        <div class="box-r">
+            <h1>당신이 입력한 텍스트는 {{total}} 단어로 구성되어 있습니다.</h1>
+
+            <a href="{% url 'home' %}"> 다시하기 </a>
+            
+            <h1>입력한 텍스트: </h1>
+            {{fulltext}}
+
+            <h1>단어 카운트:</h1>
+            <!-- '단어' - '단어나온 횟수' -->
+            {% for word, howmany in dictionary %}
+
+            {{word}} : {{howmany}}
+            <br>
+            {% endfor %}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+
+* {
+    text-align: center
+ }
+
+h1 {
+    color: #4da6ff;
+}
+
+
+body {
+    background-color:#ffb3b3;
+}
+div {
+    background-color:#ffe6e6;
+    border-style: dashed;
+    border-color: #4da6ff;
+    margin: 200px 400px 500px 400px;
+}
+
+textarea {
+    border-color: #4da6ff
+}
+.box-r {
+    background-color: white;
+}
